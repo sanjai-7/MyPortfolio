@@ -172,6 +172,7 @@ section h2 {
     display: flex;
     /* justify-content: center; */
     margin-top: 20px;
+    gap: 30px;
 }
 
 .experience-card {
@@ -180,7 +181,6 @@ section h2 {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 }
@@ -352,15 +352,11 @@ section h2 {
 }
 
 .certification-details {
-    text-align: left;
+    text-align: center;
     padding-top: 10px;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
-
-.certification-card:hover .certification-details {
     opacity: 1;
 }
+
 
 .certification-details p {
     color: #000000;
@@ -454,12 +450,12 @@ section h2 {
 .contact-item p {
     margin-top: 10px;
     font-size: 16px;
-    color: #666;
+    color: #ffffff;
     line-height: 1.6;
 }
 
 .contact-item p a {
-    color: #666;
+    color: #ffffff;
     text-decoration: none;
 }
 
@@ -476,4 +472,29 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+/* Mobile Header Styles */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    header h2 {
+        margin-left: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
 }
