@@ -13,6 +13,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* Header Styles */
@@ -20,16 +22,14 @@ header {
     background: #aaa2a2;
     color: #000000;
     padding: 1rem 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 50pt;
-    width: auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 header h2 {
     font-size: 30px;
-    margin-left: 90px;
+    margin: 1;
+    
 }
 
 nav ul {
@@ -37,8 +37,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 10px; 
-    margin-left: 355px;
+    gap: 10px;
 }
 
 nav ul li {
@@ -476,17 +475,67 @@ footer {
     bottom: 0;
 }
 
+/* Tablet Header Styles */
+@media (max-width: 1036px) and (min-width: 600px) {
+    header {
+        padding: 0.5rem 0;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h2 {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 5px 15px;
+    }
+
+     /* About Section for Tablets */
+     .about-container {
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-bottom: 20px;
+        margin-left: 50px;
+    }
+    
+
+    .about-text {
+        margin-left: 0;
+        margin-right: 50px;
+    }
+}
+
 /* Mobile Header Styles */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     header {
         flex-direction: column;
         height: auto;
         padding: 10px 0;
     }
 
+    .container {
+        flex-direction: row;
+        align-items: center;
+    }
+
     header h2 {
         margin-left: 0;
-        margin-right: 100px;
+        margin-right: 0;
         margin-bottom: 10px;
         font-size: 24px;
     }
@@ -499,5 +548,25 @@ footer {
 
     nav ul li {
         margin: 5px 0;
+    }
+
+    /* About Section for Mobile */
+    .about-container {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin-bottom: 20px;
+        margin-left: 95px;
+    }
+    .about-photo img {
+        width: 160px; 
+        height: 200px; 
+    }
+    .about-text {
+        margin-left: 0;
+        margin-right: 0px;
     }
 }
