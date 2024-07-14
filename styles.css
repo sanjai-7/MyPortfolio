@@ -23,12 +23,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px;
+    height: 50pt;
+    width: auto;
 }
 
 header h2 {
     font-size: 30px;
-    margin-left: 30px;
+    margin-left: 90px;
 }
 
 nav ul {
@@ -36,7 +37,7 @@ nav ul {
     padding: 0;
     margin: 0;
     display: flex;
-    gap: 9px; 
+    gap: 10px; 
     margin-left: 355px;
 }
 
@@ -99,6 +100,7 @@ section h2 {
 
 .timeline-content h3 {
     margin: 0;
+    color: rgb(0, 230, 255);
 }
 
 .timeline-content p {
@@ -484,6 +486,7 @@ footer {
 
     header h2 {
         margin-left: 0;
+        margin-right: 100px;
         margin-bottom: 10px;
         font-size: 24px;
     }
